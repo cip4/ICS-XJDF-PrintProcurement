@@ -37,7 +37,7 @@ jobs:
       # Build test - only required to 'see' github's variables.
       - name: Check Build Variables
         run:  >
-          python Build\buildtest.py ICS_JDF_Base.ini
+          python Build\buildtest.py ICS_XJDF_PrintProcurement.ini
           "$env:XJDF_FILE_NAME $env:XJDF_VERSION Draft-$env:NOW Build-$env:GITHUB_RUN_NUMBER"
           "$env:JDF_VERSION Draft-$env:NOW Build-$env:GITHUB_RUN_NUMBER"
           "Run-$env:GITHUB_RUN_NUMBER"
@@ -45,7 +45,7 @@ jobs:
       # Uses the remote self-host to build the ICS
       - name: Build ICS Specification
         run:  >
-          python Build\specbuilder.py ICS_JDF_Base.ini
+          python Build\specbuilder.py ICS_XJDF_PrintProcurement.ini
           "$env:XJDF_FILE_NAME $env:XJDF_VERSION Draft-$env:NOW Build-$env:GITHUB_RUN_NUMBER"
           "$env:JDF_VERSION Draft-$env:NOW Build-$env:GITHUB_RUN_NUMBER"
           "Run-$env:GITHUB_RUN_NUMER"
