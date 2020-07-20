@@ -3,8 +3,9 @@
 name: Snapshot Build
 # The VERSION is the main release number i.e. 1.7 or 2.1
 env:      
-  XJDF_VERSION:   2.0
+  XJDF_VERSION:   '2.0'
   XJDF_FILE_NAME: ICS-XJDF-PrintProcurement
+  CONFIG_FILE:    ICS_XJDF_PrintProcurement.ini
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -37,7 +38,7 @@ jobs:
       # Build test - only required to 'see' github's variables.
       - name: Check Build Variables
         run:  >
-          python Build\buildtest.py ICS_XJDF_PrintProcurement.ini
+          python Build\buildtest.py $env:CONFIG_FILE
           "$env:XJDF_FILE_NAME $env:XJDF_VERSION Draft-$env:NOW Build-$env:GITHUB_RUN_NUMBER"
           "$env:JDF_VERSION Draft-$env:NOW Build-$env:GITHUB_RUN_NUMBER"
           "Run-$env:GITHUB_RUN_NUMBER"
@@ -45,7 +46,7 @@ jobs:
       # Uses the remote self-host to build the ICS
       - name: Build ICS Specification
         run:  >
-          python Build\specbuilder.py ICS_XJDF_PrintProcurement.ini
+          python Build\specbuilder.py $env:CONFIG_FILE
           "$env:XJDF_FILE_NAME $env:XJDF_VERSION Draft-$env:NOW Build-$env:GITHUB_RUN_NUMBER"
           "$env:JDF_VERSION Draft-$env:NOW Build-$env:GITHUB_RUN_NUMBER"
           "Run-$env:GITHUB_RUN_NUMER"
@@ -54,6 +55,6 @@ jobs:
       - name: Upload ICS Specification artifact
         uses: actions/upload-artifact@v2
         with:
-          name: ICS-JDF-Base-Snapshot-artifact
+          name: "$env:XJDF_FILE_NAME-artifact"
           path: target/*.pdf
           
