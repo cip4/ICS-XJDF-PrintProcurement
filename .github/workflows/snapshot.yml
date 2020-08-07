@@ -4,7 +4,7 @@ name: Snapshot Build
 # The VERSION is the main release number i.e. 1.7 or 2.1
 env:      
   XJDF_VERSION:   '2.0'
-  XJDF_FILE_NAME: ICS-XJDF-PrintProcurement
+  XJDF_FILE_NAME: ICS XJDF PrintProcurement
   CONFIG_FILE:    ICS_XJDF_PrintProcurement.ini
 
 # Controls when the action will run. Triggers the workflow on push or pull request
