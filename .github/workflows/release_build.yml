@@ -5,7 +5,7 @@ name: Release Build
 # The VERSION is the main release number i.e. 1.7 or 2.1
 env:
   BUILD_NAME:           ICS-XDF-PRINTPROCUREMENT
-  DOCUMENT_VERSION:     '2.0'
+  DOCUMENT_VERSION:     '2.2'
   DOCUMENT_FILE_NAME:   ICS XJDF PrintProcurement
   CONFIG_FILE:          Build\ICS_XJDF_PrintProcurement.ini
   CONFLUENCE_ID:        '15663320'
