@@ -5,7 +5,7 @@ name: Snapshot Build
 # The VERSION is the main release number i.e. 1.7 or 2.1
 env:
   BUILD_NAME:           ICS-XDF-PRINTPROCUREMENT
-  DOCUMENT_VERSION:     '2.1'
+  DOCUMENT_VERSION:     '2.2'
   DOCUMENT_COVER_TITLE: PrintProcurement ICS
   CONFIG_FILE:          Build\ICS_XJDF_PrintProcurement.ini
   CONFLUENCE_ID:        '1560313992'
