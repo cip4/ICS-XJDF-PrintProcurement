@@ -6,14 +6,14 @@ name: Snapshot Build
 env:
   BUILD_NAME:           ICS-XDF-PRINTPROCUREMENT
   DOCUMENT_VERSION:     '2.1'
-  DOCUMENT_COVER_TITLE: PrintProcurement ICS
+  DOCUMENT_COVER_TITLE: Automated Print Procurement ICS
   CONFIG_FILE:          Build\ICS_XJDF_PrintProcurement.ini
   CONFLUENCE_ID:        '1560313992'
   CONFLUENCE_LABELS:    'ics-xjdf-printprocurement,ics-draft'
   
   DOCUMENT_METADATA_COPYRIGHT:  'CIP4 Organization, all rights reserved'
-  DOCUMENT_METADATA_TITLE:      'PrintProcurement ICS'
-  DOCUMENT_METADATA_SUBJECT:    'PrintProcurement Interoperability Conformance Specification for JDF'
+  DOCUMENT_METADATA_TITLE:      'Automated Print Procurement ICS'
+  DOCUMENT_METADATA_SUBJECT:    'Automated Print Procurement Interoperability Conformance Specification for XJDF'
   DOCUMENT_METADATA_AUTHOR:     'CIP4 Organization'
   DOCUMENT_METADATA_KEYWORDS:   'Automation;CIM;CIP4;Graphic Arts;Graphics;Interface;Printing;Specification;Standard;Workflow;XML'
 
