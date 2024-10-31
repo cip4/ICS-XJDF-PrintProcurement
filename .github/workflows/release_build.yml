@@ -2,10 +2,10 @@
 
 name: Release Build
 ## This section contains ALL variable specific for this project ##
-# The VERSION is the main release number i.e. 2.2 (here for convenience but the git tag is actually used)
+# The VERSION is the main release number i.e. 2.3 (here for convenience but the git tag is actually used)
 env:
   BUILD_NAME:           ICS-XDF-PRINTPROCUREMENT
-  #DOCUMENT_VERSION:     '2.2'
+  #DOCUMENT_VERSION:     '2.3'
   DOCUMENT_COVER_TITLE: Automated Print Procurement ICS
   CONFIG_FILE:          Build\ICS_XJDF_PrintProcurement.ini
   CONFLUENCE_ID:        '1560313992'
